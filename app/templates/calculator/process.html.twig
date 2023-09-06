@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+
+{% block container %}
+    <h1>Калькулятор</h1>
+    {{ form(form) }}
+    {% if result is defined %}
+        <div class="alert alert-success">
+            {{ result }}
+        </div>
+    {% endif %}
+{% endblock %}
