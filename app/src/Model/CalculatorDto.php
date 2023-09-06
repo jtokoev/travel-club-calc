@@ -1,9 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Model;
 
 use App\Enum\CalculatorOperationEnumType;
-
 use App\Validator\ConstraintDivisionByZero;
 use Symfony\Component\Validator\Constraints as Assert;
 
@@ -21,5 +22,4 @@ class CalculatorDto
     #[Assert\Type('float')]
     #[Assert\NotBlank]
     public float $secondArgument;
-
 }

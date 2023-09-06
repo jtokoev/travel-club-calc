@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Enum;
 
 enum CalculatorOperationEnumType: string
@@ -17,5 +19,4 @@ enum CalculatorOperationEnumType: string
             [],
         );
     }
-
 }
