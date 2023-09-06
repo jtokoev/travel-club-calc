@@ -1,9 +1,8 @@
-FROM php:8.1-fpm
+FROM php:8.2-fpm
 
 
 RUN apt-get update && apt-get install -y \
     libpq-dev git unzip libzip-dev  \
-    && docker-php-ext-install pdo pdo_pgsql \
     && docker-php-ext-install zip
 
 
